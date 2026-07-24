@@ -1,0 +1,5 @@
+# Ham/işlenmemiş orijinal fotoğraflar (site tarafından kullanılmıyor, sadece kaynak arşivi)
+resimler/
+
+# Claude Code araç ayarları / yerel yapılandırma (siteyle ilgisi yok)
+.claude/
