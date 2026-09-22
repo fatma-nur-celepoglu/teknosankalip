@@ -334,7 +334,7 @@ h1,h2,h3,h4{font-family:var(--ff-head);color:var(--white);font-weight:700;line-h
 
 /* ===================== WHY US ===================== */
 .why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center;}
-.why-media img{border-radius:var(--radius);box-shadow:var(--shadow-lg);aspect-ratio:3/4;object-fit:cover;}
+.why-media img{border-radius:var(--radius);box-shadow:var(--shadow-lg);aspect-ratio:16/9;object-fit:cover;}
 .why-list{display:flex;flex-direction:column;gap:30px;margin-top:30px;}
 .why-item{display:flex;gap:22px;}
 .why-num{
