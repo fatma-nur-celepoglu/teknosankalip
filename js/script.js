@@ -87,3 +87,17 @@ if (contactForm) {
     window.open(`https://wa.me/905327098535?text=${text}`, '_blank');
   });
 }
+
+/* Paylaş butonu */
+(function(){
+  var btn=document.getElementById('shareBtn');
+  if(!btn)return;
+  btn.addEventListener('click',function(){
+    var data={title:document.title,text:'Teknosan Kalıp Plastik İmalat',url:location.href};
+    if(navigator.share){navigator.share(data).catch(function(){});return;}
+    var label=btn.querySelector('span');
+    var done=function(){if(label){var t=label.textContent;label.textContent='Bağlantı kopyalandı';setTimeout(function(){label.textContent=t;},2000);}};
+    if(navigator.clipboard){navigator.clipboard.writeText(location.href).then(done);}
+    else{window.prompt('Bağlantıyı kopyalayın:',location.href);}
+  });
+})();

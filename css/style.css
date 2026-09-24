@@ -185,6 +185,18 @@ h1,h2,h3,h4{font-family:var(--ff-head);color:var(--white);font-weight:700;line-h
 .hero-youtube svg{color:#ff0000;flex-shrink:0;}
 .hero-youtube:hover svg{color:#fff;}
 
+.hero-share{
+  position:absolute;top:206px;right:24px;z-index:5;
+  display:flex;align-items:center;gap:8px;
+  padding:10px 18px;border-radius:100px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
+  backdrop-filter:blur(6px);
+  color:#fff;font:inherit;font-weight:600;font-size:.88rem;cursor:pointer;
+  transition:background .25s ease, transform .25s ease;
+}
+.hero-share:hover{background:rgba(255,255,255,.28);transform:translateY(-2px);}
+.hero-share svg{flex-shrink:0;}
+
 .scroll-cue{
   position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
   width:26px;height:42px;border:2px solid rgba(255,255,255,.4);
@@ -568,4 +580,6 @@ h1,h2,h3,h4{font-family:var(--ff-head);color:var(--white);font-weight:700;line-h
   .hero-actions .btn{width:100%;justify-content:center;}
   .hero-youtube{top:112px;right:16px;padding:8px 14px;}
   .hero-youtube span{display:none;}
+  .hero-share{top:158px;right:16px;padding:8px 14px;}
+  .hero-share span{display:none;}
 }
