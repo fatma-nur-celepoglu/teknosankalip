@@ -578,8 +578,8 @@ h1,h2,h3,h4{font-family:var(--ff-head);color:var(--white);font-weight:700;line-h
   .gallery-item.wide{grid-column:span 1;}
   .hero-actions{flex-direction:column;align-items:flex-start;}
   .hero-actions .btn{width:100%;justify-content:center;}
-  .hero-youtube{top:112px;right:16px;padding:8px 14px;}
+  .hero-youtube{top:112px;right:16px;padding:11px 13px;}
   .hero-youtube span{display:none;}
-  .hero-share{top:158px;right:16px;padding:8px 14px;}
+  .hero-share{top:180px;right:16px;padding:11px 13px;}
   .hero-share span{display:none;}
 }
